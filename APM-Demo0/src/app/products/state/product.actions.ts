@@ -2,7 +2,7 @@ import {createAction, props} from '@ngrx/store';
 import {Product} from '../product';
 
 export const toggleProductCode = createAction(
-  '[Product] Toggle Product Code'
+  '[Product] Toggle Product Code' //action type string
 );
 
 export const setCurrentProduct = createAction(
