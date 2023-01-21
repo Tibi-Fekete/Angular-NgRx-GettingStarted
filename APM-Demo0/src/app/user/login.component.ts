@@ -4,10 +4,10 @@ import {Router} from '@angular/router';
 
 import {AuthService} from './auth.service';
 import {Store} from '@ngrx/store';
-import {getMaskUserName} from './state/user.reducer';
 import {State} from '../state/app.state';
 import * as UserActions from './state/user.actions';
-import {Observable} from "rxjs";
+import {Observable} from 'rxjs';
+import {getMaskUserName} from './state';
 
 @Component({
   templateUrl: './login.component.html',

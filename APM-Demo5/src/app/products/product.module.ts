@@ -18,16 +18,19 @@ const productRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    SharedModule,
-    RouterModule.forChild(productRoutes),
-    StoreModule.forFeature('products', productReducer),
-    EffectsModule.forFeature([ProductEffects])
-  ],
-  declarations: [
-    ProductShellComponent,
-    ProductListComponent,
-    ProductEditComponent
-  ]
+    imports: [
+        SharedModule,
+        RouterModule.forChild(productRoutes),
+        StoreModule.forFeature('products', productReducer),
+        EffectsModule.forFeature([ProductEffects])
+    ],
+    exports: [
+        ProductListComponent
+    ],
+    declarations: [
+        ProductShellComponent,
+        ProductListComponent,
+        ProductEditComponent
+    ]
 })
 export class ProductModule { }
